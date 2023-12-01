@@ -1,13 +1,151 @@
+@font-face {
+  font-family: Qanelas-bold;
+  src: url(./fonts/Qanelas/Qanelas-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Circular-bold;
+  src: url(./fonts/circular-bold.otf);
+}
+@font-face {
+  font-family: Circular-reg;
+  src: url(./fonts/CircularStd-Book.otf);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f7ece3;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.app-container {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.top-bar {
+  margin: 0 auto;
+  height: 25vh;
+  width: 80%;
+}
+h1 {
+  margin-top: 2%;
+  font-family: "Qanelas-bold";
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ed3d23;
+  font-size: 90px;
+  text-align: center;
+}
+.products-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90%;
+  height: 80vh;
+  overflow-y: scroll;
+  margin: 0 auto;
+}
+
+.product {
+  background-color: #8f86c1;
+  position: relative;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 10px 13px -7px #d5cdef,
+    5px 5px 15px 5px rgba(139, 127, 180, 0.78);
+  box-shadow: 0px 10px 13px -7px #d5cdef,
+    5px 5px 15px 5px rgba(139, 127, 180, 0.78);
+  margin: 1%;
+  width: 25%;
+  height: 400px;
+  justify-content: space-evenly;
+}
+.title {
+  margin-top: 0;
+  font-family: "Qanelas-bold";
+  text-transform: uppercase;
+  text-wrap: wrap;
+  font-size: 16px;
+  color: white;
+}
+.price {
+  margin-top: 0;
+  font-family: "Qanelas-bold";
+  text-transform: uppercase;
+  text-wrap: nowrap;
+  font-size: 26px;
+  color: white;
+}
+.image-container {
+  align-self: center;
+  position: relative;
+  display: inline-block;
+}
+.product-image {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  justify-content: space-evenly;
+  max-width: 150px;
+  max-height: 150px;
+  width: 150px;
+  height: 150px;
+}
+
+.product-information {
+  display: flex;
+  flex-direction: column;
+}
+.product-info-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  align-items: baseline;
+  margin-left: 10%;
+}
+.addtoCart {
+  position: absolute;
+  font-family: "Circular-bold";
+  color: white;
+  background-color: #90a477;
+  font-weight: 600;
+  right: 33%;
+  width: 100px;
+  height: 32px;
+  bottom: -3%;
+}
+.cart-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #a0a0a0;
+  z-index: 2;
+  width: 39%;
+  height: 45vh;
+  overflow-y: scroll;
+}
+.cart-button {
+  position: absolute;
+  z-index: 3;
+  top: 5px;
+  right: 8px;
+  border: 1px solid black;
+  font-size: 39px;
+  color: white;
+  background-color: #ed3d23;
 }
