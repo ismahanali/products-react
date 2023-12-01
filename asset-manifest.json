@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/products-react/static/css/main.e64db5a0.css",
+    "main.js": "/products-react/static/js/main.44d99abf.js",
+    "static/js/787.54d3ab17.chunk.js": "/products-react/static/js/787.54d3ab17.chunk.js",
+    "static/media/Qanelas-ExtraBold.ttf": "/products-react/static/media/Qanelas-ExtraBold.f4ad45e626708f0b9cd1.ttf",
+    "static/media/CircularStd-Book.otf": "/products-react/static/media/CircularStd-Book.9048137056e4347dbbd5.otf",
+    "static/media/circular-bold.otf": "/products-react/static/media/circular-bold.9048137056e4347dbbd5.otf",
+    "index.html": "/products-react/index.html",
+    "main.e64db5a0.css.map": "/products-react/static/css/main.e64db5a0.css.map",
+    "main.44d99abf.js.map": "/products-react/static/js/main.44d99abf.js.map",
+    "787.54d3ab17.chunk.js.map": "/products-react/static/js/787.54d3ab17.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e64db5a0.css",
+    "static/js/main.44d99abf.js"
+  ]
+}
